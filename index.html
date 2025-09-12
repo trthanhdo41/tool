@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UEFTool - Tool USB Auto Thi Chuyên Nghiệp</title>
+    <title>UEFTool USB Auto thi cuối kỳ điểm cao 8.5+</title>
     <meta name="description" content="UEFTool - Công cụ USB tự động thi chuyên nghiệp, đảm bảo điểm 9+, hoàn tiền x2 nếu dưới 9 điểm">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="font-inter bg-gray-50">
@@ -16,7 +17,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <div class="flex-shrink-0">
+                    <div class="flex-shrink-0 flex items-center space-x-3">
+                        <img src="logo.png" alt="UEFTool" class="h-10 w-auto rounded-lg">
                         <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                             UEFTool
                         </h1>
@@ -61,42 +63,42 @@
                                 UEFTool
                             </span>
                             <br>
-                            <span class="text-gray-800">USB Auto Thi</span>
+                            <span class="text-gray-800">USB Auto thi cuối kỳ điểm cao 8.5+</span>
                         </h1>
                         <p class="text-xl text-gray-600 leading-relaxed">
-                            <strong>Cuộc cách mạng trong thi cử!</strong> Tool USB tự động thi đầu tiên tại Việt Nam, 
-                            được tin dùng bởi hàng nghìn sinh viên. <span class="text-green-600 font-semibold">Đảm bảo điểm 9+</span> 
-                            hoặc <span class="text-red-600 font-semibold">hoàn tiền gấp đôi!</span>
+                            <strong>Sợ rớt môn? Bố mẹ la? Áp lực học tập?</strong> UEFTool giải quyết tất cả! 
+                            Công nghệ AI chuyên giải đề thi hơn cả nhà vô địch olympia, mang đến giải pháp thi cử 
+                            <span class="text-green-600 font-semibold">hoàn hảo nhất</span> cho sinh viên UEF
                         </p>
                         <div class="flex items-center space-x-4 text-sm text-gray-500">
                             <div class="flex items-center">
                                 <i class="fas fa-star text-yellow-500 mr-1"></i>
-                                <span>4.9/5 từ 2,847 khách hàng</span>
+                                <span>4.9/5 từ khách hàng</span>
                             </div>
                             <div class="flex items-center">
                                 <i class="fas fa-users text-blue-500 mr-1"></i>
-                                <span>15,000+ sinh viên tin dùng</span>
+                                <span>1000+ sinh viên tin dùng</span>
                             </div>
                         </div>
                     </div>
                     
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <button class="cta-button bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                        <a href="https://www.facebook.com/share/18yjq5DEC9/?mibextid=wwXIfr" target="_blank" class="cta-button inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
                             <i class="fas fa-rocket mr-2"></i>
-                            Đặt mua ngay - Ưu đãi 50%
-                        </button>
+                            Đặt mua ngay
+                        </a>
                     </div>
 
                     <div class="grid grid-cols-3 gap-6 pt-8">
                         <div class="text-center bg-white/50 rounded-xl p-4 hover:bg-white/80 transition-all duration-300">
-                            <div class="text-3xl font-bold text-blue-600">9.2+</div>
-                            <div class="text-sm text-gray-600 font-medium">Điểm trung bình</div>
-                            <div class="text-xs text-gray-500">Đảm bảo 100%</div>
+                            <div class="text-3xl font-bold text-blue-600">8.5+</div>
+                            <div class="text-sm text-gray-600 font-medium">Điểm thi</div>
+                            <div class="text-xs text-gray-500">Đảm bảo 100% mới đúng nhé</div>
                         </div>
                         <div class="text-center bg-white/50 rounded-xl p-4 hover:bg-white/80 transition-all duration-300">
                             <div class="text-3xl font-bold text-green-600">2x</div>
                             <div class="text-sm text-gray-600 font-medium">Hoàn tiền</div>
-                            <div class="text-xs text-gray-500">Nếu dưới 9 điểm</div>
+                            <div class="text-xs text-gray-500">Nếu dưới 8.5 điểm</div>
                         </div>
                         <div class="text-center bg-white/50 rounded-xl p-4 hover:bg-white/80 transition-all duration-300">
                             <div class="text-3xl font-bold text-purple-600">24/7</div>
@@ -140,19 +142,20 @@
     <section id="features" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Tại sao 15,000+ sinh viên chọn UEFTool?</h2>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Tại sao sinh viên UEF nên dùng?</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    <strong>Sợ rớt môn? Bố mẹ la? Áp lực học tập?</strong> UEFTool giải quyết tất cả! 
                     Công nghệ AI tiên tiến kết hợp với đội ngũ chuyên gia hàng đầu, 
-                    mang đến giải pháp thi cử <span class="text-blue-600 font-semibold">hoàn hảo nhất</span> hiện nay
+                    mang đến giải pháp thi cử <span class="text-blue-600 font-semibold">hoàn hảo nhất</span> cho sinh viên UEF
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="feature-card bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                     <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-6">
-                        <i class="fas fa-usb text-white text-2xl"></i>
+                        <i class="fas fa-hdd text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">USB Plug & Play</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">USB</h3>
                     <p class="text-gray-600">
                         <strong>Không cần cài đặt!</strong> Tool được tích hợp sẵn trong USB cao cấp, 
                         chỉ cần cắm vào máy là sẵn sàng hoạt động. Tương thích 100% với mọi hệ điều hành.
@@ -166,7 +169,7 @@
                     <h3 class="text-xl font-bold text-gray-900 mb-4">AI Auto Khoanh</h3>
                     <p class="text-gray-600">
                         <strong>Công nghệ AI tiên tiến!</strong> Tự động khoanh đáp án chính xác 99.8% 
-                        sau khi đội support hoàn thành. Không cần can thiệp, không để lại dấu vết.
+                        sau khi đội AI hoàn thành bài giải. Không cần can thiệp, không để lại dấu vết.
                     </p>
                 </div>
 
@@ -209,7 +212,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-4">Siêu Tốc Độ</h3>
                     <p class="text-gray-600">
-                        <strong>Hoàn thành trong 15-30 phút!</strong> Quy trình tự động 100%, 
+                        <strong>Hoàn thành trong 10-15 phút!</strong> Quy trình tự động 100%, 
                         tiết kiệm 90% thời gian so với cách truyền thống.
                     </p>
                 </div>
@@ -224,7 +227,7 @@
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">Quy trình "3 bước vàng" - Đơn giản như 1-2-3!</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     Chỉ với <span class="text-blue-600 font-bold">3 bước đơn giản</span>, bạn sẽ có điểm 9+ 
-                    mà không cần lo lắng gì. <span class="text-green-600 font-semibold">Đã được 15,000+ sinh viên kiểm chứng!</span>
+                    mà không cần lo lắng gì. <span class="text-green-600 font-semibold">Đã được 1000+ sinh viên kiểm chứng!</span>
                 </p>
             </div>
 
@@ -250,10 +253,10 @@
                         </div>
                         <div class="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transform translate-x-4"></div>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Bước 2: Auto Gửi Đề</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Bước 2: AI Tự Giải Bài</h3>
                     <p class="text-gray-600">
-                        <strong>AI tự động!</strong> Tool sẽ tự động chụp và gửi đề thi đến đội support 
-                        chuyên nghiệp trong vòng 30 giây. Bạn chỉ cần ngồi chờ.
+                        <strong>AI siêu thông minh!</strong> Hệ thống AI sẽ tự động phân tích và giải bài thi 
+                        với độ chính xác trên 99%. Thời gian: 10-15 phút.
                     </p>
                 </div>
 
@@ -264,10 +267,10 @@
                         </div>
                         <div class="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transform translate-x-4"></div>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Bước 3: Support Làm Bài</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Bước 3: AI Làm Bài</h3>
                     <p class="text-gray-600">
-                        <strong>Đội ngũ chuyên gia!</strong> 50+ thầy cô kinh nghiệm 10+ năm sẽ làm bài 
-                        với độ chính xác 99.8%. Thời gian: 15-30 phút.
+                        <strong>AI hoàn thiện!</strong> Hệ thống AI sẽ hoàn thiện bài làm với độ chính xác 
+                        trên 99%. Không cần can thiệp thủ công, hoàn toàn tự động.
                     </p>
                 </div>
 
@@ -277,10 +280,10 @@
                             <span class="text-white text-2xl font-bold">4</span>
                         </div>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Bước 4: Auto Khoanh</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Bước 4: Tool Auto Khoanh</h3>
                     <p class="text-gray-600">
-                        <strong>Hoàn thành tự động!</strong> AI sẽ tự động khoanh đáp án chính xác vào đề thi. 
-                        <span class="text-green-600 font-bold">Đảm bảo điểm 9+!</span>
+                        <strong>Hoàn thành tự động!</strong> Tool sẽ tự động khoanh đáp án chính xác vào đề thi. 
+                        <span class="text-green-600 font-bold">Đảm bảo điểm 8+!</span>
                     </p>
                 </div>
             </div>
@@ -293,12 +296,12 @@
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">3 Gói Dịch Vụ - Lựa chọn phù hợp với bạn</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Từ <span class="text-red-600 font-bold">1 triệu/môn</span> đến <span class="text-blue-600 font-bold">5 triệu/2 kỳ</span> - 
-                    Tất cả đều đảm bảo <span class="text-green-600 font-bold">điểm 9+</span> và hoàn tiền x2 nếu dưới 9 điểm!
+                    Từ <span class="text-red-600 font-bold">999k/môn</span> đến <span class="text-blue-600 font-bold">4tr999/2 kỳ</span> - 
+                    Tất cả đều đảm bảo <span class="text-green-600 font-bold">điểm 8+</span> và hoàn tiền x2 nếu dưới 8 điểm!
                 </p>
                 <div class="mt-4 inline-flex items-center bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-semibold">
                     <i class="fas fa-fire mr-2"></i>
-                    Ưu đãi đặc biệt: Giảm 30% cho 100 khách hàng đầu tiên!
+                    Ưu đãi đặc biệt: Giảm giá cho sinh viên UEF!
                 </div>
             </div>
 
@@ -307,7 +310,10 @@
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-gray-200">
                     <div class="text-center mb-8">
                         <h3 class="text-2xl font-bold text-gray-900 mb-2">Gói Cơ Bản</h3>
-                        <div class="text-4xl font-bold text-blue-600 mb-2">1,000,000đ</div>
+                        <div class="flex items-center justify-center space-x-2 mb-2">
+                            <span class="text-2xl text-gray-400 line-through">1,500,000đ</span>
+                            <div class="text-4xl font-bold text-blue-600">999,000đ</div>
+                        </div>
                         <p class="text-gray-600">/ 1 môn học</p>
                         <div class="mt-2 bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
                             Phù hợp cho 1 môn
@@ -333,9 +339,9 @@
                         </div>
                     </div>
 
-                    <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300">
+                    <a href="https://www.facebook.com/share/18yjq5DEC9/?mibextid=wwXIfr" target="_blank" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300 inline-block text-center">
                         Chọn gói này
-                    </button>
+                    </a>
                 </div>
 
                 <!-- Gói 2: 3 triệu/kỳ (POPULAR) -->
@@ -348,7 +354,10 @@
                     
                     <div class="text-center mb-8">
                         <h3 class="text-2xl font-bold mb-2">Gói Kỳ Học</h3>
-                        <div class="text-4xl font-bold mb-2">3,000,000đ</div>
+                        <div class="flex items-center justify-center space-x-2 mb-2">
+                            <span class="text-2xl text-red-300 line-through">4,500,000đ</span>
+                            <div class="text-4xl font-bold">2,999,000đ</div>
+                        </div>
                         <p class="text-blue-100">/ 1 kỳ học (tất cả môn)</p>
                         <div class="mt-2 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-sm font-bold">
                             Tiết kiệm 50% so với gói cơ bản
@@ -378,16 +387,19 @@
                         </div>
                     </div>
 
-                            <button class="w-full bg-white text-blue-600 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors duration-300">
+                            <a href="https://www.facebook.com/share/18yjq5DEC9/?mibextid=wwXIfr" target="_blank" class="w-full bg-white text-blue-600 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors duration-300 inline-block text-center">
                                 <i class="fas fa-rocket mr-2"></i>Chọn gói này
-                            </button>
+                            </a>
                 </div>
 
                 <!-- Gói 3: 5 triệu/2 kỳ -->
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-purple-200">
                     <div class="text-center mb-8">
                         <h3 class="text-2xl font-bold text-gray-900 mb-2">Gói VIP</h3>
-                        <div class="text-4xl font-bold text-purple-600 mb-2">5,000,000đ</div>
+                        <div class="flex items-center justify-center space-x-2 mb-2">
+                            <span class="text-2xl text-gray-400 line-through">7,500,000đ</span>
+                            <div class="text-4xl font-bold text-purple-600">4,999,000đ</div>
+                        </div>
                         <p class="text-gray-600">/ 2 kỳ học (1 năm)</p>
                         <div class="mt-2 bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">
                             Tiết kiệm 60% - Tốt nhất
@@ -413,7 +425,7 @@
                         </div>
                         <div class="flex items-center space-x-3">
                             <i class="fas fa-check-circle text-green-500"></i>
-                            <span class="text-sm">Bảo hành 2 năm</span>
+                            <span class="text-sm">Bảo hành 1 năm</span>
                         </div>
                         <div class="flex items-center space-x-3">
                             <i class="fas fa-check-circle text-green-500"></i>
@@ -421,9 +433,9 @@
                         </div>
                     </div>
 
-                    <button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors duration-300">
+                    <a href="https://www.facebook.com/share/18yjq5DEC9/?mibextid=wwXIfr" target="_blank" class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors duration-300 inline-block text-center">
                         Chọn gói VIP
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -435,9 +447,9 @@
                             <p class="text-sm text-green-600">Nếu không hài lòng</p>
                         </div>
                         <div class="bg-blue-50 p-4 rounded-lg">
-                            <i class="fas fa-shipping-fast text-blue-600 text-2xl mb-2"></i>
-                            <p class="text-blue-800 font-semibold">Giao hàng miễn phí</p>
-                            <p class="text-sm text-blue-600">Toàn quốc trong 24h</p>
+                            <i class="fas fa-download text-blue-600 text-2xl mb-2"></i>
+                            <p class="text-blue-800 font-semibold">Tải tool về USB</p>
+                            <p class="text-sm text-blue-600">Trước khi thanh toán</p>
                         </div>
                         <div class="bg-purple-50 p-4 rounded-lg">
                             <i class="fas fa-headset text-purple-600 text-2xl mb-2"></i>
@@ -457,13 +469,18 @@
     <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Khách hàng nói gì về UEFTool?</h2>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Sinh viên nói gì về UEFTool?</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Hơn <span class="text-blue-600 font-bold">15,000 sinh viên</span> đã tin tưởng và đạt điểm 9+ 
-                    với UEFTool. Đây là những chia sẻ chân thực từ khách hàng!
+                    Hơn <span class="text-blue-600 font-bold">1000+ sinh viên UEF</span> đã tin tưởng và đạt điểm 8+ 
+                    với UEFTool. Đây là những chia sẻ chân thực từ các bạn sinh viên!
                 </p>
             </div>
 
+            <!-- Swiper -->
+            <div class="swiper testimonials-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                     <div class="flex items-center mb-4">
@@ -471,8 +488,9 @@
                             N
                         </div>
                         <div class="ml-4">
-                            <h4 class="font-semibold text-gray-900">Nguyễn Văn A</h4>
-                            <p class="text-sm text-gray-600">Sinh viên ĐH Kinh tế</p>
+                            <h4 class="font-semibold text-gray-900">Nguyễn Minh Tuấn</h4>
+                            <p class="text-sm text-gray-600">K19 - Quản trị kinh doanh UEF</p>
+                            <p class="text-xs text-gray-500">1 ngày trước</p>
                         </div>
                     </div>
                     <div class="flex mb-3">
@@ -483,8 +501,8 @@
                         <i class="fas fa-star text-yellow-500"></i>
                     </div>
                     <p class="text-gray-600 italic">
-                        "Tool này thật sự tuyệt vời! Mình đã đạt 9.5 điểm môn Kinh tế vi mô. 
-                        Chỉ cần cắm USB và chờ, mọi thứ tự động hoàn hảo. Cảm ơn UEFTool!"
+                        "Ôi trời ơi bro ơi :( Mình sợ rớt môn Kinh tế vi mô lắm, stress muốn chết luôn á. 
+                        Nhờ UEFTool mà đạt 8.5 điểm! Giờ mình flex điểm với bạn bè suốt ngày luôn :D Tool này bá đạo vl!"
                     </p>
                 </div>
 
@@ -494,8 +512,9 @@
                             T
                         </div>
                         <div class="ml-4">
-                            <h4 class="font-semibold text-gray-900">Trần Thị B</h4>
-                            <p class="text-sm text-gray-600">Sinh viên ĐH Ngoại thương</p>
+                            <h4 class="font-semibold text-gray-900">Ẩn danh</h4>
+                            <p class="text-sm text-gray-600">K20 - Ngôn ngữ Anh UEF</p>
+                            <p class="text-xs text-gray-500">3 ngày trước</p>
                         </div>
                     </div>
                     <div class="flex mb-3">
@@ -506,8 +525,8 @@
                         <i class="fas fa-star text-yellow-500"></i>
                     </div>
                     <p class="text-gray-600 italic">
-                        "Lúc đầu mình cũng lo lắng, nhưng sau khi sử dụng thì thấy rất an toàn. 
-                        Điểm 9.8 môn Toán cao cấp! Support team rất nhiệt tình và chuyên nghiệp."
+                        "Mình học dốt Toán lắm bro ạ :v Sợ rớt môn là GPA tụt dốc không phanh luôn. 
+                        UEFTool cứu mình khỏi cảnh đó! Đạt 8.2 điểm, giờ mình có thể flex với crush rồi :p Tool này xịn sò quá!"
                     </p>
                 </div>
 
@@ -517,8 +536,9 @@
                             L
                         </div>
                         <div class="ml-4">
-                            <h4 class="font-semibold text-gray-900">Lê Văn C</h4>
-                            <p class="text-sm text-gray-600">Sinh viên ĐH Bách Khoa</p>
+                            <h4 class="font-semibold text-gray-900">Lê Hoàng Nam</h4>
+                            <p class="text-sm text-gray-600">K21 - Công nghệ thông tin UEF</p>
+                            <p class="text-xs text-gray-500">1 tuần trước</p>
                         </div>
                     </div>
                     <div class="flex mb-3">
@@ -529,21 +549,195 @@
                         <i class="fas fa-star text-yellow-500"></i>
                     </div>
                     <p class="text-gray-600 italic">
-                        "Đầu tư 1 triệu mà được điểm 9+ thì quá rẻ! Mình đã giới thiệu cho 5 bạn cùng lớp, 
-                        ai cũng đạt điểm cao. UEFTool thật sự đáng tin cậy!"
+                        "Mình lo lắng về tương lai lắm, sợ điểm thấp là thất nghiệp luôn á :'(
+                        UEFTool cứu mình khỏi cảnh đó! Đạt 8.7 điểm, giờ mình có thể chill mà không lo gì nữa :> Tool này bá cháy bọ chét!"
                     </p>
                 </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold">
+                            P
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">Ẩn danh</h4>
+                            <p class="text-sm text-gray-600">K20 - Marketing UEF</p>
+                            <p class="text-xs text-gray-500">2 tuần trước</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Ôi mẹ ơi! Mình sợ rớt môn Marketing lắm, lo lắng suốt đêm không ngủ được :'(
+                        Nhờ UEFTool mà đạt 8.3 điểm! Giờ mình có thể ngủ ngon rồi, không còn stress nữa :x Tool này cứu mạng luôn!"
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold">
+                            H
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">Hoàng Văn Đức</h4>
+                            <p class="text-sm text-gray-600">K19 - Tài chính - Ngân hàng UEF</p>
+                            <p class="text-xs text-gray-500">1 tháng trước</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Bro ơi! Mình học dốt Tài chính lắm, sợ rớt môn là GPA tụt dốc không phanh luôn :'(
+                        UEFTool cứu mình! Đạt 8.6 điểm, giờ mình có thể flex với bạn bè rồi :D Tool này xịn xò quá!"
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center text-white font-bold">
+                            Q
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">Ẩn danh</h4>
+                            <p class="text-sm text-gray-600">K21 - Ngôn ngữ Nhật UEF</p>
+                            <p class="text-xs text-gray-500">2 tháng trước</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Mình stress vì sợ rớt môn Tiếng Anh lắm, lo lắng không biết làm sao :(
+                        Nhờ UEFTool mà đạt 8.4 điểm! Giờ mình có thể chill mà không lo gì nữa :> Tool này bá đạo vl!"
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white font-bold">
+                            D
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">Đỗ Minh Tuấn</h4>
+                            <p class="text-sm text-gray-600">K20 - Luật kinh tế UEF</p>
+                            <p class="text-xs text-gray-500">3 tháng trước</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Ôi trời ơi! Mình sợ rớt môn Luật lắm, lo lắng suốt ngày không yên :'(
+                        UEFTool cứu mình! Đạt 8.8 điểm, giờ mình có thể flex với crush rồi :p Tool này xịn sò quá!"
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold">
+                            V
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">Ẩn danh</h4>
+                            <p class="text-sm text-gray-600">K19 - Quản trị dịch vụ du lịch và lữ hành UEF</p>
+                            <p class="text-xs text-gray-500">4 tháng trước</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Mình học dốt Du lịch lắm, sợ rớt môn là GPA tụt dốc không phanh luôn :v
+                        Nhờ UEFTool mà đạt 8.1 điểm! Giờ mình có thể chill mà không lo gì nữa :D Tool này bá cháy bọ chét!"
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center text-white font-bold">
+                            B
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">Bùi Văn Hùng</h4>
+                            <p class="text-sm text-gray-600">K21 - Quản trị nhân lực UEF</p>
+                            <p class="text-xs text-gray-500">5 tháng trước</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Bro ơi! Mình stress vì sợ rớt môn Quản trị lắm, lo lắng không biết làm sao :(
+                        UEFTool cứu mình! Đạt 8.5 điểm, giờ mình có thể flex với bạn bè suốt ngày luôn :> Tool này bá đạo vl!"
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center text-white font-bold">
+                            K
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">Ẩn danh</h4>
+                            <p class="text-sm text-gray-600">K20 - Kế toán UEF</p>
+                            <p class="text-xs text-gray-500">6 tháng trước</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Ôi mẹ ơi! Mình sợ rớt môn Kế toán lắm, lo lắng suốt đêm không ngủ được :x
+                        Nhờ UEFTool mà đạt 8.2 điểm! Giờ mình có thể ngủ ngon rồi, không còn stress nữa :3 Tool này cứu mạng luôn!"
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Swiper Navigation -->
+            <div class="swiper-pagination mt-8"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
             </div>
 
             <div class="mt-12 text-center">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                     <div class="text-center">
-                        <div class="text-3xl font-bold text-blue-600">15,000+</div>
-                        <div class="text-sm text-gray-600">Khách hàng tin dùng</div>
+                        <div class="text-3xl font-bold text-blue-600">1000+</div>
+                        <div class="text-sm text-gray-600">Sinh viên UEF tin dùng</div>
                     </div>
                     <div class="text-center">
-                        <div class="text-3xl font-bold text-green-600">98.7%</div>
-                        <div class="text-sm text-gray-600">Tỷ lệ thành công</div>
+                        <div class="text-3xl font-bold text-green-600">99%</div>
+                        <div class="text-sm text-gray-600">Độ chính xác AI</div>
                     </div>
                     <div class="text-center">
                         <div class="text-3xl font-bold text-purple-600">4.9/5</div>
@@ -560,98 +754,71 @@
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold mb-4">Liên hệ với chúng tôi</h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    Sẵn sàng hỗ trợ và tư vấn 24/7. Liên hệ ngay để được tư vấn miễn phí!
+                    Cần hỗ trợ? Kết nối ngay với admin để được tư vấn miễn phí!
                 </p>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12">
-                <div class="space-y-8">
-                    <div class="space-y-6">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                                <i class="fas fa-phone text-white"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-semibold">Hotline</h3>
-                                <p class="text-gray-300">0123.456.789</p>
-                            </div>
+            <div class="text-center mb-12">
+                <a href="https://www.facebook.com/share/18yjq5DEC9/?mibextid=wwXIfr" target="_blank" class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-12 py-4 rounded-lg font-semibold text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <i class="fas fa-headset mr-2"></i>
+                    Kết nối với Admin
+                </a>
                         </div>
 
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
-                                <i class="fab fa-telegram text-white"></i>
+            <!-- Feedback Form -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+                <h3 class="text-2xl font-bold mb-6 text-center">Sinh viên nói gì về UEFTool?</h3>
+                <p class="text-gray-300 text-center mb-8">Chia sẻ trải nghiệm của bạn để giúp các bạn sinh viên khác!</p>
+                
+                <form class="space-y-6" id="feedback-form">
+                    <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                            <label class="block text-sm font-medium mb-2">Họ và tên</label>
+                            <input type="text" id="feedback-name" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nhập họ và tên (có thể ẩn danh)">
                             </div>
                             <div>
-                                <h3 class="text-lg font-semibold">Telegram</h3>
-                                <p class="text-gray-300">@ueftool_support</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center">
-                                <i class="fab fa-facebook text-white"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-semibold">Facebook</h3>
-                                <p class="text-gray-300">UEFTool Official</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center">
-                                <i class="fas fa-envelope text-white"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-semibold">Email</h3>
-                                <p class="text-gray-300">support@ueftool.com</p>
-                            </div>
+                            <label class="block text-sm font-medium mb-2">Khoa/Ngành học</label>
+                            <select id="feedback-major" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option value="">Chọn khoa/ngành</option>
+                                <option value="Quản trị kinh doanh">Quản trị kinh doanh</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Tài chính - Ngân hàng">Tài chính - Ngân hàng</option>
+                                <option value="Luật">Luật</option>
+                                <option value="Công nghệ thông tin">Công nghệ thông tin</option>
+                                <option value="Kế toán">Kế toán</option>
+                                <option value="Ngôn ngữ Anh">Ngôn ngữ Anh</option>
+                                <option value="Ngôn ngữ Nhật">Ngôn ngữ Nhật</option>
+                                <option value="Tâm lý học">Tâm lý học</option>
+                                <option value="Quản trị dịch vụ du lịch">Quản trị dịch vụ du lịch</option>
+                            </select>
                         </div>
                     </div>
 
-                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
-                        <h3 class="text-xl font-bold mb-4">Thời gian hỗ trợ</h3>
-                        <div class="space-y-2 text-gray-300">
-                            <div class="flex justify-between">
-                                <span>Thứ 2 - Thứ 6:</span>
-                                <span>8:00 - 22:00</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span>Thứ 7 - Chủ nhật:</span>
-                                <span>9:00 - 21:00</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span>Hotline khẩn cấp:</span>
-                                <span>24/7</span>
-                            </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Đánh giá</label>
+                        <div class="flex space-x-2 mb-4">
+                            <button type="button" class="star-rating text-2xl text-gray-400 hover:text-yellow-500 transition-colors" data-rating="1">★</button>
+                            <button type="button" class="star-rating text-2xl text-gray-400 hover:text-yellow-500 transition-colors" data-rating="2">★</button>
+                            <button type="button" class="star-rating text-2xl text-gray-400 hover:text-yellow-500 transition-colors" data-rating="3">★</button>
+                            <button type="button" class="star-rating text-2xl text-gray-400 hover:text-yellow-500 transition-colors" data-rating="4">★</button>
+                            <button type="button" class="star-rating text-2xl text-gray-400 hover:text-yellow-500 transition-colors" data-rating="5">★</button>
                         </div>
                     </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Chia sẻ trải nghiệm của bạn</label>
+                        <textarea id="feedback-message" rows="4" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Chia sẻ trải nghiệm của bạn về UEFTool..."></textarea>
                 </div>
 
-                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-                    <h3 class="text-2xl font-bold mb-6">Gửi tin nhắn</h3>
-                    <form class="space-y-6">
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Họ và tên</label>
-                            <input type="text" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nhập họ và tên">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Số điện thoại</label>
-                            <input type="tel" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nhập số điện thoại">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Tin nhắn</label>
-                            <textarea rows="4" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nhập tin nhắn của bạn"></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">
+                    <button type="submit" class="w-full bg-gradient-to-r from-green-600 to-blue-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">
                             <i class="fas fa-paper-plane mr-2"></i>
-                            Gửi tin nhắn
+                        Gửi feedback
                         </button>
                     </form>
-                </div>
             </div>
         </div>
     </section>
@@ -668,13 +835,13 @@
                         Công cụ USB tự động thi chuyên nghiệp, đảm bảo điểm 9+ với đội ngũ support chuyên nghiệp.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors">
+                        <a href="https://www.facebook.com/share/18yjq5DEC9/?mibextid=wwXIfr" target="_blank" class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors">
+                        <a href="https://www.facebook.com/share/18yjq5DEC9/?mibextid=wwXIfr" target="_blank" class="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors">
                             <i class="fab fa-telegram"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center hover:bg-red-700 transition-colors">
+                        <a href="https://www.facebook.com/share/18yjq5DEC9/?mibextid=wwXIfr" target="_blank" class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center hover:bg-red-700 transition-colors">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
@@ -707,6 +874,26 @@
         </div>
     </footer>
 
+    <!-- Floating Chat Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://www.facebook.com/share/18yjq5DEC9/?mibextid=wwXIfr" target="_blank" 
+           class="floating-chat-btn group relative flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300 animate-bounce-slow">
+            <i class="fab fa-facebook-messenger text-white text-2xl"></i>
+            
+            <!-- Tooltip -->
+            <div class="absolute bottom-full right-0 mb-2 px-3 py-2 bg-gray-900 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                Chat với Admin
+                <div class="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900"></div>
+            </div>
+            
+            <!-- Notification dot -->
+            <div class="absolute -top-2 -right-2 px-2 py-1 bg-red-500 rounded-full flex items-center justify-center">
+                <span class="text-white text-[10px] font-bold">Chào bạn</span>
+            </div>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

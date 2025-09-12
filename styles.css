@@ -581,3 +581,87 @@ textarea:focus {
         left: 100%;
     }
 }
+
+/* Floating Chat Button Styles */
+.floating-chat-btn {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Slow bounce animation for attention */
+@keyframes bounce-slow {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.animate-bounce-slow {
+    animation: bounce-slow 2s infinite;
+}
+
+/* Shake animation for more attention */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-2px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(2px);
+    }
+}
+
+.floating-chat-btn:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Pulse effect for notification dot */
+@keyframes pulse-red {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+.floating-chat-btn .absolute.-top-2.-right-2 {
+    animation: pulse-red 1.5s infinite;
+}
+
+/* Enhanced shadow on hover */
+.floating-chat-btn:hover {
+    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Tooltip arrow animation */
+.floating-chat-btn .absolute.top-full.right-4 {
+    animation: fadeInUp 0.3s ease-out;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .floating-chat-btn {
+        width: 14rem;
+        height: 14rem;
+    }
+    
+    .floating-chat-btn i {
+        font-size: 1.5rem;
+    }
+    
+    .floating-chat-btn .absolute.-top-1.-right-1 {
+        width: 1rem;
+        height: 1rem;
+    }
+}

@@ -12,6 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
     initCountUpAnimation();
     initParallaxEffect();
     initAutoKhoanhDemo();
+    // Delay để đảm bảo DOM load xong
+    setTimeout(() => {
+        initTestimonialsCarousel();
+    }, 100);
+    initFeedbackForm();
 });
 
 // Navigation functionality
@@ -473,62 +478,62 @@ document.addEventListener('keydown', function(e) {
 function initAutoKhoanhDemo() {
     const quizContainer = document.getElementById('quiz-container');
     
-    // Danh sách câu hỏi từ nhiều môn học
+    // Danh sách câu hỏi từ các ngành học UEF
     const questions = [
         {
-            subject: "Toán Cao Cấp",
-            question: "Tính giới hạn: lim(x→0) (sin x)/x = ?",
+            subject: "Quản trị kinh doanh",
+            question: "Trong quản trị doanh nghiệp, chức năng nào sau đây là quan trọng nhất?",
             options: ["A", "B", "C", "D"],
-            answers: ["1", "0", "∞", "Không tồn tại"],
+            answers: ["Hoạch định", "Tổ chức", "Lãnh đạo", "Kiểm soát"],
             correct: "A"
         },
         {
-            subject: "Tiếng Anh",
-            question: "Choose the correct form: 'If I _____ you, I would study harder.'",
+            subject: "Marketing",
+            question: "4P trong Marketing Mix bao gồm:",
             options: ["A", "B", "C", "D"],
-            answers: ["were", "am", "was", "be"],
+            answers: ["Product, Price, Place, Promotion", "People, Process, Physical evidence, Promotion", "Product, People, Place, Process", "Price, Place, People, Physical evidence"],
             correct: "A"
         },
         {
-            subject: "Lịch Sử Đảng",
-            question: "Đại hội Đảng lần thứ mấy thông qua đường lối đổi mới?",
+            subject: "Tài chính - Ngân hàng",
+            question: "Tỷ lệ ROE (Return on Equity) được tính bằng:",
             options: ["A", "B", "C", "D"],
-            answers: ["Đại hội VI (1986)", "Đại hội V (1982)", "Đại hội VII (1991)", "Đại hội VIII (1996)"],
+            answers: ["Lợi nhuận ròng / Vốn chủ sở hữu", "Lợi nhuận ròng / Tổng tài sản", "Doanh thu / Vốn chủ sở hữu", "Lợi nhuận ròng / Doanh thu"],
             correct: "A"
         },
         {
-            subject: "Kinh Tế Chính Trị",
-            question: "Quy luật giá trị trong nền kinh tế thị trường có tác dụng:",
+            subject: "Luật kinh tế",
+            question: "Hợp đồng dân sự có hiệu lực khi:",
             options: ["A", "B", "C", "D"],
-            answers: ["Điều tiết sản xuất và lưu thông", "Phân hóa giàu nghèo", "Cả A và B", "Không có tác dụng gì"],
-            correct: "C"
-        },
-        {
-            subject: "Vật Lý",
-            question: "Theo thuyết tương đối, khối lượng của vật sẽ:",
-            options: ["A", "B", "C", "D"],
-            answers: ["Tăng khi vận tốc tăng", "Giảm khi vận tốc tăng", "Không đổi", "Tăng theo bình phương vận tốc"],
+            answers: ["Có đủ các điều kiện theo quy định pháp luật", "Được ký kết bằng văn bản", "Có chứng thực của cơ quan nhà nước", "Được đăng ký tại cơ quan có thẩm quyền"],
             correct: "A"
         },
         {
-            subject: "Hóa Học",
-            question: "Phản ứng nào sau đây là phản ứng oxi hóa - khử?",
+            subject: "Công nghệ thông tin",
+            question: "Trong lập trình hướng đối tượng, tính chất nào sau đây cho phép che giấu thông tin?",
             options: ["A", "B", "C", "D"],
-            answers: ["2H₂ + O₂ → 2H₂O", "HCl + NaOH → NaCl + H₂O", "CaCO₃ → CaO + CO₂", "AgNO₃ + NaCl → AgCl + NaNO₃"],
+            answers: ["Encapsulation", "Inheritance", "Polymorphism", "Abstraction"],
             correct: "A"
         },
         {
-            subject: "Sinh Học",
-            question: "Quá trình quang hợp xảy ra chủ yếu ở:",
+            subject: "Kế toán",
+            question: "Nguyên tắc kế toán nào yêu cầu ghi nhận doanh thu khi hàng hóa được giao?",
             options: ["A", "B", "C", "D"],
-            answers: ["Lục lạp", "Ty thể", "Nhân tế bào", "Màng tế bào"],
+            answers: ["Nguyên tắc phù hợp", "Nguyên tắc thận trọng", "Nguyên tắc nhất quán", "Nguyên tắc trọng yếu"],
             correct: "A"
         },
         {
-            subject: "Triết Học",
-            question: "Theo chủ nghĩa duy vật biện chứng, vật chất là:",
+            subject: "Ngôn ngữ Anh",
+            question: "Trong câu điều kiện loại 2, động từ chính ở mệnh đề if được chia như thế nào?",
             options: ["A", "B", "C", "D"],
-            answers: ["Phạm trù triết học chỉ thực tại khách quan", "Cảm giác của con người", "Ý thức", "Không tồn tại"],
+            answers: ["Past simple", "Present simple", "Past perfect", "Present perfect"],
+            correct: "A"
+        },
+        {
+            subject: "Tâm lý học",
+            question: "Theo thuyết phát triển nhận thức của Piaget, giai đoạn tiền thao tác cụ thể (2-7 tuổi) có đặc điểm:",
+            options: ["A", "B", "C", "D"],
+            answers: ["Tư duy trực quan, chưa có khả năng bảo tồn", "Tư duy logic, có khả năng bảo tồn", "Tư duy trừu tượng", "Tư duy cảm tính"],
             correct: "A"
         }
     ];
@@ -668,5 +673,136 @@ function handleSwipe() {
             // Swipe down
             console.log('Swipe down detected');
         }
+    }
+}
+
+// Testimonials Carousel với Swiper
+function initTestimonialsCarousel() {
+    // Tạo lại cấu trúc HTML cho Swiper
+    const swiperContainer = document.querySelector('.testimonials-swiper .swiper-wrapper');
+    if (!swiperContainer) return;
+    
+    // Lấy tất cả testimonials
+    const testimonials = swiperContainer.querySelectorAll('.bg-white.rounded-2xl');
+    if (testimonials.length === 0) return;
+    
+    // Xóa nội dung cũ
+    swiperContainer.innerHTML = '';
+    
+    // Tạo slides mới - mỗi feedback là một slide
+    testimonials.forEach(testimonial => {
+        const slide = document.createElement('div');
+        slide.className = 'swiper-slide';
+        slide.appendChild(testimonial.cloneNode(true));
+        swiperContainer.appendChild(slide);
+    });
+    
+    // Khởi tạo Swiper
+    const swiper = new Swiper('.testimonials-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
+    });
+}
+
+
+// Feedback Form
+function initFeedbackForm() {
+    const feedbackForm = document.getElementById('feedback-form');
+    const starRatings = document.querySelectorAll('.star-rating');
+    let selectedRating = 0;
+
+    // Star rating functionality
+    starRatings.forEach((star, index) => {
+        star.addEventListener('click', () => {
+            selectedRating = index + 1;
+            updateStarDisplay();
+        });
+
+        star.addEventListener('mouseenter', () => {
+            highlightStars(index + 1);
+        });
+    });
+
+    // Reset stars on mouse leave
+    const starContainer = document.querySelector('.flex.space-x-2.mb-4');
+    if (starContainer) {
+        starContainer.addEventListener('mouseleave', () => {
+            updateStarDisplay();
+        });
+    }
+
+    function updateStarDisplay() {
+        starRatings.forEach((star, index) => {
+            if (index < selectedRating) {
+                star.classList.add('text-yellow-500');
+                star.classList.remove('text-gray-400');
+            } else {
+                star.classList.add('text-gray-400');
+                star.classList.remove('text-yellow-500');
+            }
+        });
+    }
+
+    function highlightStars(rating) {
+        starRatings.forEach((star, index) => {
+            if (index < rating) {
+                star.classList.add('text-yellow-500');
+                star.classList.remove('text-gray-400');
+            } else {
+                star.classList.add('text-gray-400');
+                star.classList.remove('text-yellow-500');
+            }
+        });
+    }
+
+    // Form submission
+    if (feedbackForm) {
+        feedbackForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('feedback-name').value;
+            const major = document.getElementById('feedback-major').value;
+            const message = document.getElementById('feedback-message').value;
+
+            if (!message.trim()) {
+                alert('Vui lòng nhập feedback của bạn!');
+                return;
+            }
+
+            if (selectedRating === 0) {
+                alert('Vui lòng đánh giá sao!');
+                return;
+            }
+
+            // Giả lập gửi feedback thành công
+            alert('Cảm ơn bạn đã gửi feedback! Chúng tôi sẽ xem xét và có thể sử dụng để cải thiện dịch vụ.');
+            
+            // Reset form
+            feedbackForm.reset();
+            selectedRating = 0;
+            updateStarDisplay();
+        });
     }
 }
