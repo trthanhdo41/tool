@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEFTool - Tool USB Auto Thi Chuyên Nghiệp</title>
+    <meta name="description" content="UEFTool - Công cụ USB tự động thi chuyên nghiệp, đảm bảo điểm 9+, hoàn tiền x2 nếu dưới 9 điểm">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-inter bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                            UEFTool
+                        </h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Trang chủ</a>
+                        <a href="#features" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Tính năng</a>
+                        <a href="#process" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Quy trình</a>
+                        <a href="#pricing" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Bảng giá</a>
+                        <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Liên hệ</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="mobile-nav-link block px-3 py-2 text-gray-700 hover:text-blue-600">Trang chủ</a>
+                <a href="#features" class="mobile-nav-link block px-3 py-2 text-gray-700 hover:text-blue-600">Tính năng</a>
+                <a href="#process" class="mobile-nav-link block px-3 py-2 text-gray-700 hover:text-blue-600">Quy trình</a>
+                <a href="#pricing" class="mobile-nav-link block px-3 py-2 text-gray-700 hover:text-blue-600">Bảng giá</a>
+                <a href="#contact" class="mobile-nav-link block px-3 py-2 text-gray-700 hover:text-blue-600">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-16 min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-white to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+                            <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                                UEFTool
+                            </span>
+                            <br>
+                            <span class="text-gray-800">USB Auto Thi</span>
+                        </h1>
+                        <p class="text-xl text-gray-600 leading-relaxed">
+                            <strong>Cuộc cách mạng trong thi cử!</strong> Tool USB tự động thi đầu tiên tại Việt Nam, 
+                            được tin dùng bởi hàng nghìn sinh viên. <span class="text-green-600 font-semibold">Đảm bảo điểm 9+</span> 
+                            hoặc <span class="text-red-600 font-semibold">hoàn tiền gấp đôi!</span>
+                        </p>
+                        <div class="flex items-center space-x-4 text-sm text-gray-500">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-500 mr-1"></i>
+                                <span>4.9/5 từ 2,847 khách hàng</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-users text-blue-500 mr-1"></i>
+                                <span>15,000+ sinh viên tin dùng</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="cta-button bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                            <i class="fas fa-rocket mr-2"></i>
+                            Đặt mua ngay - Ưu đãi 50%
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-6 pt-8">
+                        <div class="text-center bg-white/50 rounded-xl p-4 hover:bg-white/80 transition-all duration-300">
+                            <div class="text-3xl font-bold text-blue-600">9.2+</div>
+                            <div class="text-sm text-gray-600 font-medium">Điểm trung bình</div>
+                            <div class="text-xs text-gray-500">Đảm bảo 100%</div>
+                        </div>
+                        <div class="text-center bg-white/50 rounded-xl p-4 hover:bg-white/80 transition-all duration-300">
+                            <div class="text-3xl font-bold text-green-600">2x</div>
+                            <div class="text-sm text-gray-600 font-medium">Hoàn tiền</div>
+                            <div class="text-xs text-gray-500">Nếu dưới 9 điểm</div>
+                        </div>
+                        <div class="text-center bg-white/50 rounded-xl p-4 hover:bg-white/80 transition-all duration-300">
+                            <div class="text-3xl font-bold text-purple-600">24/7</div>
+                            <div class="text-sm text-gray-600 font-medium">Hỗ trợ</div>
+                            <div class="text-xs text-gray-500">Phản hồi < 5 phút</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="relative z-10">
+                        <div class="bg-white rounded-2xl shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                                </div>
+                                
+                                <!-- Demo câu hỏi trắc nghiệm -->
+                                <div class="space-y-4" id="quiz-container">
+                                    <!-- Câu hỏi sẽ được thay đổi bằng JavaScript -->
+                                </div>
+
+                                <div class="bg-green-100 border border-green-300 rounded-lg p-4">
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fas fa-check-circle text-green-600"></i>
+                                        <span class="text-green-800 font-semibold">Auto khoanh hoàn tất!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -top-4 -right-4 w-full h-full bg-gradient-to-br from-blue-400 to-purple-500 rounded-2xl opacity-20 transform rotate-6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Tại sao 15,000+ sinh viên chọn UEFTool?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Công nghệ AI tiên tiến kết hợp với đội ngũ chuyên gia hàng đầu, 
+                    mang đến giải pháp thi cử <span class="text-blue-600 font-semibold">hoàn hảo nhất</span> hiện nay
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-usb text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">USB Plug & Play</h3>
+                    <p class="text-gray-600">
+                        <strong>Không cần cài đặt!</strong> Tool được tích hợp sẵn trong USB cao cấp, 
+                        chỉ cần cắm vào máy là sẵn sàng hoạt động. Tương thích 100% với mọi hệ điều hành.
+                    </p>
+                </div>
+
+                <div class="feature-card bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">AI Auto Khoanh</h3>
+                    <p class="text-gray-600">
+                        <strong>Công nghệ AI tiên tiến!</strong> Tự động khoanh đáp án chính xác 99.8% 
+                        sau khi đội support hoàn thành. Không cần can thiệp, không để lại dấu vết.
+                    </p>
+                </div>
+
+                <div class="feature-card bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Bảo Mật Quân Đội</h3>
+                    <p class="text-gray-600">
+                        <strong>Mã hóa 256-bit!</strong> Hệ thống bảo mật đa lớp như ngân hàng, 
+                        tự động xóa dấu vết, 100% an toàn và bí mật tuyệt đối.
+                    </p>
+                </div>
+
+                <div class="feature-card bg-gradient-to-br from-yellow-50 to-yellow-100 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-yellow-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Support VIP 24/7</h3>
+                    <p class="text-gray-600">
+                        <strong>Đội ngũ chuyên gia!</strong> 50+ support viên kinh nghiệm 5+ năm, 
+                        phản hồi < 2 phút, hỗ trợ mọi lúc mọi nơi.
+                    </p>
+                </div>
+
+                <div class="feature-card bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-money-bill-wave text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Hoàn Tiền 2X</h3>
+                    <p class="text-gray-600">
+                        <strong>Cam kết bằng văn bản!</strong> Nếu điểm dưới 9, chúng tôi hoàn tiền 
+                        <span class="text-red-600 font-bold">GẤP ĐÔI</span> trong 24h. Đã bồi thường 0 trường hợp!
+                    </p>
+                </div>
+
+                <div class="feature-card bg-gradient-to-br from-indigo-50 to-indigo-100 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-clock text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Siêu Tốc Độ</h3>
+                    <p class="text-gray-600">
+                        <strong>Hoàn thành trong 15-30 phút!</strong> Quy trình tự động 100%, 
+                        tiết kiệm 90% thời gian so với cách truyền thống.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Quy trình "3 bước vàng" - Đơn giản như 1-2-3!</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Chỉ với <span class="text-blue-600 font-bold">3 bước đơn giản</span>, bạn sẽ có điểm 9+ 
+                    mà không cần lo lắng gì. <span class="text-green-600 font-semibold">Đã được 15,000+ sinh viên kiểm chứng!</span>
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="process-step text-center">
+                    <div class="relative mb-8">
+                        <div class="w-20 h-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl font-bold">1</span>
+                        </div>
+                        <div class="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transform translate-x-4"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Bước 1: Cắm USB</h3>
+                    <p class="text-gray-600">
+                        <strong>Siêu đơn giản!</strong> Sau khi đăng nhập vào bài thi, chỉ cần cắm USB vào máy. 
+                        Tool sẽ tự động kích hoạt và sẵn sàng hoạt động.
+                    </p>
+                </div>
+
+                <div class="process-step text-center">
+                    <div class="relative mb-8">
+                        <div class="w-20 h-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl font-bold">2</span>
+                        </div>
+                        <div class="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transform translate-x-4"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Bước 2: Auto Gửi Đề</h3>
+                    <p class="text-gray-600">
+                        <strong>AI tự động!</strong> Tool sẽ tự động chụp và gửi đề thi đến đội support 
+                        chuyên nghiệp trong vòng 30 giây. Bạn chỉ cần ngồi chờ.
+                    </p>
+                </div>
+
+                <div class="process-step text-center">
+                    <div class="relative mb-8">
+                        <div class="w-20 h-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl font-bold">3</span>
+                        </div>
+                        <div class="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transform translate-x-4"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Bước 3: Support Làm Bài</h3>
+                    <p class="text-gray-600">
+                        <strong>Đội ngũ chuyên gia!</strong> 50+ thầy cô kinh nghiệm 10+ năm sẽ làm bài 
+                        với độ chính xác 99.8%. Thời gian: 15-30 phút.
+                    </p>
+                </div>
+
+                <div class="process-step text-center">
+                    <div class="relative mb-8">
+                        <div class="w-20 h-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl font-bold">4</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Bước 4: Auto Khoanh</h3>
+                    <p class="text-gray-600">
+                        <strong>Hoàn thành tự động!</strong> AI sẽ tự động khoanh đáp án chính xác vào đề thi. 
+                        <span class="text-green-600 font-bold">Đảm bảo điểm 9+!</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">3 Gói Dịch Vụ - Lựa chọn phù hợp với bạn</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Từ <span class="text-red-600 font-bold">1 triệu/môn</span> đến <span class="text-blue-600 font-bold">5 triệu/2 kỳ</span> - 
+                    Tất cả đều đảm bảo <span class="text-green-600 font-bold">điểm 9+</span> và hoàn tiền x2 nếu dưới 9 điểm!
+                </p>
+                <div class="mt-4 inline-flex items-center bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-semibold">
+                    <i class="fas fa-fire mr-2"></i>
+                    Ưu đãi đặc biệt: Giảm 30% cho 100 khách hàng đầu tiên!
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Gói 1: 1 triệu/môn -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-gray-200">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Gói Cơ Bản</h3>
+                        <div class="text-4xl font-bold text-blue-600 mb-2">1,000,000đ</div>
+                        <p class="text-gray-600">/ 1 môn học</p>
+                        <div class="mt-2 bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
+                            Phù hợp cho 1 môn
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-sm">Đảm bảo điểm 9+</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-sm">Hoàn tiền x2 nếu dưới 9 điểm</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-sm">USB tool tích hợp sẵn</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-sm">Support 24/7</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300">
+                        Chọn gói này
+                    </button>
+                </div>
+
+                <!-- Gói 2: 3 triệu/kỳ (POPULAR) -->
+                <div class="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-8 text-white relative transform scale-105 shadow-2xl">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <div class="bg-yellow-400 text-yellow-900 px-4 py-1 rounded-full text-sm font-bold">
+                            <i class="fas fa-fire mr-1"></i>PHỔ BIẾN NHẤT
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-2">Gói Kỳ Học</h3>
+                        <div class="text-4xl font-bold mb-2">3,000,000đ</div>
+                        <p class="text-blue-100">/ 1 kỳ học (tất cả môn)</p>
+                        <div class="mt-2 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-sm font-bold">
+                            Tiết kiệm 50% so với gói cơ bản
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-400"></i>
+                            <span class="text-sm"><strong>Tất cả môn trong kỳ</strong></span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-400"></i>
+                            <span class="text-sm">Đảm bảo điểm 9+ mọi môn</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-400"></i>
+                            <span class="text-sm">Support VIP ưu tiên</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-400"></i>
+                            <span class="text-sm">Bảo hành trọn kỳ</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-400"></i>
+                            <span class="text-sm">Tư vấn lộ trình học</span>
+                        </div>
+                    </div>
+
+                            <button class="w-full bg-white text-blue-600 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors duration-300">
+                                <i class="fas fa-rocket mr-2"></i>Chọn gói này
+                            </button>
+                </div>
+
+                <!-- Gói 3: 5 triệu/2 kỳ -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-purple-200">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Gói VIP</h3>
+                        <div class="text-4xl font-bold text-purple-600 mb-2">5,000,000đ</div>
+                        <p class="text-gray-600">/ 2 kỳ học (1 năm)</p>
+                        <div class="mt-2 bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">
+                            Tiết kiệm 60% - Tốt nhất
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-sm"><strong>2 kỳ học liên tiếp</strong></span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-sm">Đảm bảo điểm 9+ mọi môn</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-sm">Support VIP 24/7</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-sm">Tư vấn học tập cá nhân</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-sm">Bảo hành 2 năm</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-sm">Ưu đãi đặc biệt</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors duration-300">
+                        Chọn gói VIP
+                    </button>
+                </div>
+            </div>
+
+                <div class="mt-8 text-center">
+                    <div class="grid md:grid-cols-3 gap-6 mb-6">
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <i class="fas fa-shield-alt text-green-600 text-2xl mb-2"></i>
+                            <p class="text-green-800 font-semibold">Hoàn tiền 100%</p>
+                            <p class="text-sm text-green-600">Nếu không hài lòng</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <i class="fas fa-shipping-fast text-blue-600 text-2xl mb-2"></i>
+                            <p class="text-blue-800 font-semibold">Giao hàng miễn phí</p>
+                            <p class="text-sm text-blue-600">Toàn quốc trong 24h</p>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <i class="fas fa-headset text-purple-600 text-2xl mb-2"></i>
+                            <p class="text-purple-800 font-semibold">Hỗ trợ trọn đời</p>
+                            <p class="text-sm text-purple-600">Không phí phát sinh</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500">
+                        * Giá đã bao gồm tất cả phí dịch vụ, hỗ trợ và bảo hành trọn đời
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Khách hàng nói gì về UEFTool?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Hơn <span class="text-blue-600 font-bold">15,000 sinh viên</span> đã tin tưởng và đạt điểm 9+ 
+                    với UEFTool. Đây là những chia sẻ chân thực từ khách hàng!
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                            N
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">Nguyễn Văn A</h4>
+                            <p class="text-sm text-gray-600">Sinh viên ĐH Kinh tế</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Tool này thật sự tuyệt vời! Mình đã đạt 9.5 điểm môn Kinh tế vi mô. 
+                        Chỉ cần cắm USB và chờ, mọi thứ tự động hoàn hảo. Cảm ơn UEFTool!"
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">
+                            T
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">Trần Thị B</h4>
+                            <p class="text-sm text-gray-600">Sinh viên ĐH Ngoại thương</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Lúc đầu mình cũng lo lắng, nhưng sau khi sử dụng thì thấy rất an toàn. 
+                        Điểm 9.8 môn Toán cao cấp! Support team rất nhiệt tình và chuyên nghiệp."
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                            L
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">Lê Văn C</h4>
+                            <p class="text-sm text-gray-600">Sinh viên ĐH Bách Khoa</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Đầu tư 1 triệu mà được điểm 9+ thì quá rẻ! Mình đã giới thiệu cho 5 bạn cùng lớp, 
+                        ai cũng đạt điểm cao. UEFTool thật sự đáng tin cậy!"
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-blue-600">15,000+</div>
+                        <div class="text-sm text-gray-600">Khách hàng tin dùng</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-green-600">98.7%</div>
+                        <div class="text-sm text-gray-600">Tỷ lệ thành công</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-purple-600">4.9/5</div>
+                        <div class="text-sm text-gray-600">Đánh giá trung bình</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-red-600">0</div>
+                        <div class="text-sm text-gray-600">Trường hợp hoàn tiền</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Liên hệ với chúng tôi</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Sẵn sàng hỗ trợ và tư vấn 24/7. Liên hệ ngay để được tư vấn miễn phí!
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold">Hotline</h3>
+                                <p class="text-gray-300">0123.456.789</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
+                                <i class="fab fa-telegram text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold">Telegram</h3>
+                                <p class="text-gray-300">@ueftool_support</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center">
+                                <i class="fab fa-facebook text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold">Facebook</h3>
+                                <p class="text-gray-300">UEFTool Official</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold">Email</h3>
+                                <p class="text-gray-300">support@ueftool.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                        <h3 class="text-xl font-bold mb-4">Thời gian hỗ trợ</h3>
+                        <div class="space-y-2 text-gray-300">
+                            <div class="flex justify-between">
+                                <span>Thứ 2 - Thứ 6:</span>
+                                <span>8:00 - 22:00</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Thứ 7 - Chủ nhật:</span>
+                                <span>9:00 - 21:00</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Hotline khẩn cấp:</span>
+                                <span>24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold mb-6">Gửi tin nhắn</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Họ và tên</label>
+                            <input type="text" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nhập họ và tên">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Số điện thoại</label>
+                            <input type="tel" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nhập số điện thoại">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Tin nhắn</label>
+                            <textarea rows="4" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nhập tin nhắn của bạn"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Gửi tin nhắn
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
+                        UEFTool
+                    </h3>
+                    <p class="text-gray-400 mb-6">
+                        Công cụ USB tự động thi chuyên nghiệp, đảm bảo điểm 9+ với đội ngũ support chuyên nghiệp.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center hover:bg-red-700 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Liên kết</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition-colors">Trang chủ</a></li>
+                        <li><a href="#features" class="hover:text-white transition-colors">Tính năng</a></li>
+                        <li><a href="#process" class="hover:text-white transition-colors">Quy trình</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">Bảng giá</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Hỗ trợ</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Hướng dẫn sử dụng</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Câu hỏi thường gặp</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Chính sách bảo mật</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Điều khoản sử dụng</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 UEFTool. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
